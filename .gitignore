@@ -1,0 +1,61 @@
+# ==========================================
+# Byte-compiled / optimized / DLL files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# ==========================================
+# Virtual Environments & Packaging
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+
+# ==========================================
+# PySpark, Delta Lake & Hadoop Artifacts
+# ==========================================
+# Spark metadata & warehouse
+spark-warehouse/
+metastore_db/
+derby.log
+*.crc
+
+# Large sensor telemetry & delta tables (Never commit gigabytes of raw SCADA data)
+data/raw/
+data/delta/
+data/checkpoints/
+
+# Spark MLlib saved model checkpoints (if larger than GitHub 100MB limit)
+models/spark_gbt_scada_model/
+
+# ==========================================
+# Jupyter Notebooks & IDEs
+# ==========================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.vscode/
+.idea/
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.local
+*.pem
+*.key
+kaggle.json
+
+# ==========================================
+# Operating System files
+# ==========================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
